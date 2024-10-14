@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		855024662CB6C27C0034B791 /* Appwrite in Frameworks */ = {isa = PBXBuildFile; productRef = 855024652CB6C27C0034B791 /* Appwrite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		85896C552CB5E701006A457E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855024662CB6C27C0034B791 /* Appwrite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = TeamPresence;
 			packageProductDependencies = (
+				855024652CB6C27C0034B791 /* Appwrite */,
 			);
 			productName = TeamPresence;
 			productReference = 85896C442CB5E6FF006A457E /* TeamPresence.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 85896C3B2CB5E6FF006A457E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				855024642CB6C27C0034B791 /* XCRemoteSwiftPackageReference "sdk-for-apple" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 85896C452CB5E6FF006A457E /* Products */;
 			projectDirPath = "";
@@ -562,6 +571,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		855024642CB6C27C0034B791 /* XCRemoteSwiftPackageReference "sdk-for-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appwrite/sdk-for-apple";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		855024652CB6C27C0034B791 /* Appwrite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 855024642CB6C27C0034B791 /* XCRemoteSwiftPackageReference "sdk-for-apple" */;
+			productName = Appwrite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85896C3C2CB5E6FF006A457E /* Project object */;
 }
